@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
-router.get('/year', (req, res) => {
+
+router.get('/', (req, res) => {
   const currentYear = new Date().getFullYear();
   res.json({year: currentYear.toString() });
 });
